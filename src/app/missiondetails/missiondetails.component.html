@@ -1,0 +1,18 @@
+<div *ngIf="mission">
+    <div class="main-card">
+      <mat-card [ngStyle]="{'background-color':'rgb(7, 107, 95)'}">
+        <mat-card-header>
+          <img class="example-header-image" src="{{ mission.mission_patch_small }}"/>
+          <mat-card-title><strong>Name:</strong> {{ mission.mission_name }}</mat-card-title>
+          <mat-card-subtitle
+            ><strong>Launch year:</strong> {{ mission.launch_year }}</mat-card-subtitle>
+        </mat-card-header>
+  
+        <mat-card-content>
+          <p><strong>Launch Details</strong></p>
+          <p>{{ mission.details }}</p>
+        </mat-card-content>
+        <mat-icon-youtube></mat-icon-youtube>
+      </mat-card>
+    </div>
+  </div>
